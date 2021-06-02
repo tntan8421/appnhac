@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    app:cardCornerRadius="10dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearcardviewalbum"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/imvalbum"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:id="@+id/txttenalbum"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Hơn ca yêu Ngay xuan long phung sum vay"
+            android:textSize="20sp"
+            android:maxWidth="200dp"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/txttencasialbum"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Đức Phúc"
+            android:textColor="#765"
+            android:maxWidth="200dp"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

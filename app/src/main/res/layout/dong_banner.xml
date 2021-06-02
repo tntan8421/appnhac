@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imvbackgroudbanner"
+        android:scaleType="fitXY"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/custom_backgroup_banner"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imvbackgroudbanner"
+        android:id="@+id/relative1">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="2dp"
+            android:id="@+id/imageviewbanner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignTop="@id/imageviewbanner"
+            android:layout_toRightOf="@+id/imageviewbanner"
+            android:id="@+id/txttitlebannerbaihat"
+            android:textSize="17sp"
+            android:text="Lỡ Yêu Mất Rồi"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txttitlebannerbaihat"
+            android:layout_toRightOf="@id/imageviewbanner"
+            android:layout_marginTop="7dp">
+            <TextView
+                android:id="@+id/txtnoidung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_marginRight="40dp"
+                android:maxLines="2"
+                android:text="Chao ban den voi ca khuc moi"
+                android:textColor="#ffffff"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

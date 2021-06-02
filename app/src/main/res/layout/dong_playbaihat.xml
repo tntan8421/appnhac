@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtplayindex"
+            android:layout_margin="10dp"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="17sp"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewDongBaiHat"
+            app:cardBackgroundColor="#ffffff"
+            app:contentPadding="1dp"
+            android:layout_width="60dp"
+            app:cardCornerRadius="5dp"
+            android:layout_toRightOf="@+id/txtplayindex"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/imghinhbaihat"
+                android:scaleType="fitXY"
+                android:layout_toRightOf="@+id/txtplayindex"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txtplaynhactenbaihat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/cardViewDongBaiHat"
+            android:ellipsize="end"
+            android:maxWidth="200dp"
+            android:maxLines="1"
+            android:text="Chờ Ngày Mưa Tan"
+            android:textColor="@color/design_default_color_surface"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtplaytencasi"
+            android:maxLines="1"
+            android:textSize="14dp"
+            android:maxWidth="200dp"
+            android:textColor="#7E7D7D"
+            android:text="Noo Phước Thịnh"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/txtplaynhactenbaihat"
+            android:layout_toRightOf="@+id/cardViewDongBaiHat"/>
+        <ImageView
+            android:src="@drawable/iconlove"
+            android:id="@+id/imgyeuthich"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
